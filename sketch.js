@@ -10,7 +10,7 @@ var mango1, mango2, mango3, mango4, mango5, mango6, maango7, mango8, mango9, man
 
 function preload(){
 	treeimg=loadImage("tree.png");
-	boyimg=loadImage("boy.png");
+	boyimg=loadImage("boy 2.png");
 	backImage=loadImage("backimage.jpg")
 }
 
@@ -21,7 +21,7 @@ function setup() {
 	world = engine.world;
 
 	dground=new Ground();
-	stones=new Stone(100,460,23);
+	stones=new Stone(100,490,23);
 	mango1=new Mango(600,290,34);
 	mango2=new Mango(855,325,35);
 	mango3=new Mango(670,260,35);
@@ -33,7 +33,7 @@ function setup() {
 	mango9=new Mango(940,220,35);
 	mango10=new Mango(980,305,35);
 
-	attach=new Throw(stones.body,{x:100,y:465});
+	attach=new Throw(stones.body,{x:100,y:490});
 
 	tree=createSprite(775,368);
 	tree.addImage(treeimg);
@@ -41,7 +41,7 @@ function setup() {
 
 	boy=createSprite(160,550);
 	boy.addImage(boyimg);
-	boy.scale=0.125;
+	boy.scale=0.25;
 
 	Engine.run(engine);
   
