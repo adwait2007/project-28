@@ -20,7 +20,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	dground=new Ground();
+	dground=new Ground(500,625,1200,20,);
 	stones=new Stone(100,490,23);
 	mango1=new Mango(600,290,34);
 	mango2=new Mango(855,325,35);
